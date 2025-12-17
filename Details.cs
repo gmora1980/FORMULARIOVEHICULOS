@@ -47,25 +47,6 @@ namespace FORMULARIOVEHICULOS
                     txtSeguridad.Text = row["Seguridad"].ToString();
                     txtVideo.Text = row["Video"].ToString();
                     txtPrecio.Text = row["Precio"].ToString();
-
-                    string imageUrl = row["Imagen_URL"].ToString();
-                    if (!string.IsNullOrEmpty(imageUrl))
-                    {
-                        using (HttpClient httpClient = new HttpClient())
-                        {
-                            byte[] imageData = httpClient.GetByteArrayAsync(imageUrl).Result;
-                            using (MemoryStream memoryStream = new MemoryStream(imageData))
-                            {
-                                Image vehicleImage = Image.FromStream(memoryStream);
-                                ptbVehiculo.Image = vehicleImage;
-                                ptbVehiculo.SizeMode = PictureBoxSizeMode.Zoom;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        ptbVehiculo.Image = null; // Si no hay imagen, establecer como null
-                    }
                 }
                 else
                 {

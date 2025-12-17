@@ -54,20 +54,17 @@ namespace FORMULARIOVEHICULOS
        string.IsNullOrWhiteSpace(txtAudio.Text) ||
        string.IsNullOrWhiteSpace(txtSeguridad.Text) ||
        string.IsNullOrWhiteSpace(txtVideo.Text) ||
-       string.IsNullOrWhiteSpace(txtImagen_URL.Text) ||
        string.IsNullOrWhiteSpace(txtPrecio.Text))
             {
                 MessageBox.Show("Por favor, complete todos los campos.");
                 return;
             }
-            string ImagenUr = txtImagen_URL.Text;
             try
             {
-                string conn = $@"insert into VEHICULOS (Placa, Clase, Tipo_Vehiculo, Motor, Combustible, Marca, Modelo, Transmision, Anio, Pasajeros, 
-Equipamiento, Audio, Seguridad, Video, Imagen_URL, Precio)
+                string conn = $@"insert into VEHICULOS (Placa, Clase, Tipo, Motor, Combustible, Marca, Modelo, Transmision, Anio, Pasajeros, 
+Equipamiento, Audio, Seguridad, Video, Precio)
 values ('{txtPlaca.Text}','{txtClase.Text}','{txtTipo_Vehiculo.Text}','{txtMotor.Text}','{txtCombustible.Text}','{txtMarca.Text}','{txtModelo.Text}',
-'{txtTransmision.Text}','{dtpCreacion.Value.ToString("yyyy-MM-dd")}',{txtPasajeros.Text},'{txtEquipamiento.Text}','{txtAudio.Text}','{txtSeguridad.Text}','{txtVideo.Text}',
-'{ImagenUr}',{txtPrecio.Text})";
+'{txtTransmision.Text}','{dtpCreacion.Value.ToString("yyyy-MM-dd")}',{txtPasajeros.Text},'{txtEquipamiento.Text}','{txtAudio.Text}','{txtSeguridad.Text}','{txtVideo.Text}',,{txtPrecio.Text})";
                 DataSet dataS = Connect.Execute(conn);
                 VehiculoModificado?.Invoke(this, EventArgs.Empty);
                 CargarVehiculos();
@@ -96,7 +93,6 @@ values ('{txtPlaca.Text}','{txtClase.Text}','{txtTipo_Vehiculo.Text}','{txtMotor
                 string.IsNullOrWhiteSpace(txtAudio.Text) ||
                 string.IsNullOrWhiteSpace(txtSeguridad.Text) ||
                 string.IsNullOrWhiteSpace(txtVideo.Text) ||
-                string.IsNullOrWhiteSpace(txtImagen_URL.Text) ||
                 string.IsNullOrWhiteSpace(txtPrecio.Text))
             {
                 MessageBox.Show("Por favor, complete todos los campos.");
@@ -104,9 +100,9 @@ values ('{txtPlaca.Text}','{txtClase.Text}','{txtTipo_Vehiculo.Text}','{txtMotor
             }
             try
             {
-                string conn = $@"update VEHICULOS set Clase='{txtClase.Text}', Tipo_Vehiculo='{txtTipo_Vehiculo.Text}', Motor='{txtMotor.Text}', Combustible='{txtCombustible.Text}',
+                string conn = $@"update VEHICULOS set Clase='{txtClase.Text}', Tipo='{txtTipo_Vehiculo.Text}', Motor='{txtMotor.Text}', Combustible='{txtCombustible.Text}',
 Marca='{txtMarca.Text}', Modelo='{txtModelo.Text}', Transmision='{txtTransmision.Text}', Anio='{dtpCreacion.Value.ToString("yyyy-MM-dd")}', Pasajeros={txtPasajeros.Text}, 
-Equipamiento='{txtEquipamiento.Text}', Audio='{txtAudio.Text}', Seguridad='{txtSeguridad.Text}', Video='{txtVideo.Text}', Imagen_URL='{txtImagen_URL.Text}', Precio={Precio} where Placa='{txtPlaca.Text}'";
+Equipamiento='{txtEquipamiento.Text}', Audio='{txtAudio.Text}', Seguridad='{txtSeguridad.Text}', Video='{txtVideo.Text}', Precio={Precio} where Placa='{txtPlaca.Text}'";
                 DataSet dataS = Connect.Execute(conn);
                 VehiculoModificado?.Invoke(this, EventArgs.Empty);
                 MessageBox.Show("El vehículo se actualizo de forma exitosa.");
@@ -153,14 +149,14 @@ Equipamiento='{txtEquipamiento.Text}', Audio='{txtAudio.Text}', Seguridad='{txtS
             string placa = seleccion.Cells["Placa"].Value.ToString();
             try
             {
-                string conn = $@"select Placa, Clase, Tipo_Vehiculo, Motor, Combustible, Marca, Modelo, Transmision, Anio, Pasajeros, Equipamiento, Audio, Seguridad, Video, Imagen_URL, Precio from VEHICULOS where Placa='{placa}'";
+                string conn = $@"select Placa, Clase, Tipo, Motor, Combustible, Marca, Modelo, Transmision, Anio, Pasajeros, Equipamiento, Audio, Seguridad, Video, Precio from VEHICULOS where Placa='{placa}'";
                 DataSet dataS = Connect.Execute(conn);
                 if (dataS.Tables[0].Rows.Count > 0)
                 {
                     DataRow row = dataS.Tables[0].Rows[0];
                     txtPlaca.Text=row["Placa"].ToString();
                     txtClase.Text = row["Clase"].ToString();
-                    txtTipo_Vehiculo.Text = row["Tipo_Vehiculo"].ToString();
+                    txtTipo_Vehiculo.Text = row["Tipo"].ToString();
                     txtMotor.Text = row["Motor"].ToString();
                     txtCombustible.Text = row["Combustible"].ToString();
                     txtMarca.Text = row["Marca"].ToString();
@@ -172,7 +168,6 @@ Equipamiento='{txtEquipamiento.Text}', Audio='{txtAudio.Text}', Seguridad='{txtS
                     txtAudio.Text=row["Audio"].ToString();
                     txtSeguridad.Text=row["Seguridad"].ToString();
                     txtVideo.Text = row["Video"].ToString();
-                    txtImagen_URL.Text = row["Imagen_URL"].ToString();
                     txtPrecio.Text=row["Precio"].ToString();
                 }
             }catch(Exception ex)
@@ -185,7 +180,6 @@ Equipamiento='{txtEquipamiento.Text}', Audio='{txtAudio.Text}', Seguridad='{txtS
             txtPlaca.Clear();
             txtModelo.Clear();
             txtMotor.Clear();
-            txtImagen_URL.Clear();
             txtMarca.Clear();
             dtpCreacion.Value = DateTime.Now;
             txtCombustible.Clear();
@@ -199,6 +193,11 @@ Equipamiento='{txtEquipamiento.Text}', Audio='{txtAudio.Text}', Seguridad='{txtS
             txtTransmision.Clear();
             txtEquipamiento.Clear();
             txtPlaca.Enabled = true;
+        }
+
+        private void txtPlaca_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -55,59 +55,14 @@ namespace FORMULARIOVEHICULOS
         }
         private void Recargar()
         {
-            string info = "select Placa, Clase, Transmision, Anio, Imagen_URL, Precio from VEHICULOS";
+            string info = "select Placa, Clase, Transmision, Anio, Precio from Vehiculos";
             DataSet data = Connect.Execute(info);
             DataTable tabla = data.Tables[0];
-
-            // Agregar la columna de imagen al DataTable
-            DataColumn imageColumn = new DataColumn("Imagen", typeof(Image));
-            tabla.Columns.Add(imageColumn);
-
-            // Descargar e insertar imágenes
-            using (HttpClient httpClient = new HttpClient())
-            {
-                foreach (DataRow row in tabla.Rows)
-                {
-                    string imageUrl = row["Imagen_URL"].ToString();
-
-                    try
-                    {
-                        // Descargar imagen de manera sincrónica
-                        byte[] imageData = httpClient.GetByteArrayAsync(imageUrl).Result;
-
-                        // Convertir datos a imagen
-                        using (MemoryStream memoryStream = new MemoryStream(imageData))
-                        {
-                            Image vehiculoImage = Image.FromStream(memoryStream);
-                            row["Imagen"] = vehiculoImage; // Insertar la imagen en el DataTable
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        // Manejar errores específicos de la descarga de imágenes
-                        MessageBox.Show($"Error al descargar imagen de {imageUrl}: {ex.Message}");
-                        row["Imagen"] = null; // En caso de error, establecer el valor como null
-                    }
-                }
-            }
-
-            // Eliminar la columna de URL de la imagen
-            tabla.Columns.Remove("Imagen_URL");
 
             // Configurar columnas del DataGridView
             dgvVehiculos.Columns.Clear(); // Limpiar columnas existentes
 
             dgvVehiculos.AutoGenerateColumns = false;
-
-            // Configurar columna de imagen
-            DataGridViewImageColumn imageCol = new DataGridViewImageColumn
-            {
-                HeaderText = "Vehiculo",
-                Name = "Vehiculo",
-                DataPropertyName = "Imagen", // Nombre de la columna en el DataTable
-                ImageLayout = DataGridViewImageCellLayout.Zoom // Ajustar el tamaño de la imagen
-            };
-            dgvVehiculos.Columns.Add(imageCol);
 
             // Crear y agregar manualmente las columnas
             string[] columnas = { "Placa", "Clase", "Transmision", "Anio", "Precio" };
@@ -146,8 +101,6 @@ namespace FORMULARIOVEHICULOS
             dgvVehiculos.Columns.Add(btnCotizar);
 
 
-            // Ajustar tamaño de la columna de imagen
-            dgvVehiculos.Columns["Vehiculo"].Width = 100; // Establece el ancho de la columna de imagen
             dgvVehiculos.RowTemplate.Height = 100; // Establece la altura de las filas
 
             // Ajustar columnas y filas al tamaño de la pantalla
@@ -287,6 +240,11 @@ namespace FORMULARIOVEHICULOS
             recepcionistaToolStripMenuItem.Visible = false;
             cerrarSesionToolStripMenuItem.Visible = false;
             iniciarSesionToolStripMenuItem.Visible = true;
+        }
+
+        private void eMPLEADOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

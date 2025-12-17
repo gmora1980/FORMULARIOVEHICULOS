@@ -35,7 +35,6 @@ namespace FORMULARIOVEHICULOS
             this.txtTransmision = new System.Windows.Forms.TextBox();
             this.lblTransmision = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.txtImagen_URL = new System.Windows.Forms.TextBox();
             this.txtVideo = new System.Windows.Forms.TextBox();
             this.txtPasajeros = new System.Windows.Forms.TextBox();
             this.txtAudio = new System.Windows.Forms.TextBox();
@@ -53,7 +52,6 @@ namespace FORMULARIOVEHICULOS
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lblAudio = new System.Windows.Forms.Label();
-            this.lblImagen = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblPasajeros = new System.Windows.Forms.Label();
             this.lblVideo = new System.Windows.Forms.Label();
@@ -80,7 +78,6 @@ namespace FORMULARIOVEHICULOS
             this.grbInformacion.Controls.Add(this.txtTransmision);
             this.grbInformacion.Controls.Add(this.lblTransmision);
             this.grbInformacion.Controls.Add(this.txtPrecio);
-            this.grbInformacion.Controls.Add(this.txtImagen_URL);
             this.grbInformacion.Controls.Add(this.txtVideo);
             this.grbInformacion.Controls.Add(this.txtPasajeros);
             this.grbInformacion.Controls.Add(this.txtAudio);
@@ -98,7 +95,6 @@ namespace FORMULARIOVEHICULOS
             this.grbInformacion.Controls.Add(this.btnEditar);
             this.grbInformacion.Controls.Add(this.btnAgregar);
             this.grbInformacion.Controls.Add(this.lblAudio);
-            this.grbInformacion.Controls.Add(this.lblImagen);
             this.grbInformacion.Controls.Add(this.lblPrecio);
             this.grbInformacion.Controls.Add(this.lblPasajeros);
             this.grbInformacion.Controls.Add(this.lblVideo);
@@ -112,9 +108,11 @@ namespace FORMULARIOVEHICULOS
             this.grbInformacion.Controls.Add(this.lblClase);
             this.grbInformacion.Controls.Add(this.lblPlaca);
             this.grbInformacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbInformacion.Location = new System.Drawing.Point(2, 12);
+            this.grbInformacion.Location = new System.Drawing.Point(2, 15);
+            this.grbInformacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grbInformacion.Name = "grbInformacion";
-            this.grbInformacion.Size = new System.Drawing.Size(1851, 260);
+            this.grbInformacion.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbInformacion.Size = new System.Drawing.Size(2082, 325);
             this.grbInformacion.TabIndex = 1;
             this.grbInformacion.TabStop = false;
             this.grbInformacion.Text = "Datos Vehiculo";
@@ -122,155 +120,164 @@ namespace FORMULARIOVEHICULOS
             // txtSeguridad
             // 
             this.txtSeguridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeguridad.Location = new System.Drawing.Point(955, 123);
+            this.txtSeguridad.Location = new System.Drawing.Point(1074, 154);
+            this.txtSeguridad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSeguridad.Name = "txtSeguridad";
-            this.txtSeguridad.Size = new System.Drawing.Size(240, 30);
+            this.txtSeguridad.Size = new System.Drawing.Size(270, 35);
             this.txtSeguridad.TabIndex = 41;
             // 
             // lblSeguridad
             // 
             this.lblSeguridad.AutoSize = true;
-            this.lblSeguridad.Location = new System.Drawing.Point(824, 123);
+            this.lblSeguridad.Location = new System.Drawing.Point(927, 154);
             this.lblSeguridad.Name = "lblSeguridad";
-            this.lblSeguridad.Size = new System.Drawing.Size(111, 25);
+            this.lblSeguridad.Size = new System.Drawing.Size(134, 29);
             this.lblSeguridad.TabIndex = 40;
             this.lblSeguridad.Text = "Seguridad";
             // 
             // txtTransmision
             // 
             this.txtTransmision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTransmision.Location = new System.Drawing.Point(155, 123);
+            this.txtTransmision.Location = new System.Drawing.Point(174, 154);
+            this.txtTransmision.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTransmision.Name = "txtTransmision";
-            this.txtTransmision.Size = new System.Drawing.Size(240, 30);
+            this.txtTransmision.Size = new System.Drawing.Size(270, 35);
             this.txtTransmision.TabIndex = 39;
             // 
             // lblTransmision
             // 
             this.lblTransmision.AutoSize = true;
-            this.lblTransmision.Location = new System.Drawing.Point(3, 126);
+            this.lblTransmision.Location = new System.Drawing.Point(3, 158);
             this.lblTransmision.Name = "lblTransmision";
-            this.lblTransmision.Size = new System.Drawing.Size(130, 25);
+            this.lblTransmision.Size = new System.Drawing.Size(157, 29);
             this.lblTransmision.TabIndex = 38;
             this.lblTransmision.Text = "Transmision";
             // 
             // txtPrecio
             // 
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(605, 219);
+            this.txtPrecio.Location = new System.Drawing.Point(1125, 221);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(240, 30);
+            this.txtPrecio.Size = new System.Drawing.Size(270, 35);
             this.txtPrecio.TabIndex = 35;
-            // 
-            // txtImagen_URL
-            // 
-            this.txtImagen_URL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImagen_URL.Location = new System.Drawing.Point(1023, 171);
-            this.txtImagen_URL.Name = "txtImagen_URL";
-            this.txtImagen_URL.Size = new System.Drawing.Size(311, 30);
-            this.txtImagen_URL.TabIndex = 34;
             // 
             // txtVideo
             // 
             this.txtVideo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVideo.Location = new System.Drawing.Point(605, 177);
+            this.txtVideo.Location = new System.Drawing.Point(681, 221);
+            this.txtVideo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtVideo.Name = "txtVideo";
-            this.txtVideo.Size = new System.Drawing.Size(240, 30);
+            this.txtVideo.Size = new System.Drawing.Size(270, 35);
             this.txtVideo.TabIndex = 33;
             // 
             // txtPasajeros
             // 
             this.txtPasajeros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasajeros.Location = new System.Drawing.Point(1547, 21);
+            this.txtPasajeros.Location = new System.Drawing.Point(1740, 26);
+            this.txtPasajeros.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPasajeros.Name = "txtPasajeros";
-            this.txtPasajeros.Size = new System.Drawing.Size(240, 30);
+            this.txtPasajeros.Size = new System.Drawing.Size(270, 35);
             this.txtPasajeros.TabIndex = 32;
             // 
             // txtAudio
             // 
             this.txtAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAudio.Location = new System.Drawing.Point(536, 126);
+            this.txtAudio.Location = new System.Drawing.Point(603, 158);
+            this.txtAudio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAudio.Name = "txtAudio";
-            this.txtAudio.Size = new System.Drawing.Size(240, 30);
+            this.txtAudio.Size = new System.Drawing.Size(270, 35);
             this.txtAudio.TabIndex = 31;
             // 
             // txtEquipamiento
             // 
             this.txtEquipamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEquipamiento.Location = new System.Drawing.Point(171, 159);
+            this.txtEquipamiento.Location = new System.Drawing.Point(192, 199);
+            this.txtEquipamiento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEquipamiento.Multiline = true;
             this.txtEquipamiento.Name = "txtEquipamiento";
-            this.txtEquipamiento.Size = new System.Drawing.Size(279, 86);
+            this.txtEquipamiento.Size = new System.Drawing.Size(313, 106);
             this.txtEquipamiento.TabIndex = 30;
             // 
             // txtModelo
             // 
             this.txtModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModelo.Location = new System.Drawing.Point(1411, 63);
+            this.txtModelo.Location = new System.Drawing.Point(1587, 79);
+            this.txtModelo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(240, 30);
+            this.txtModelo.Size = new System.Drawing.Size(270, 35);
             this.txtModelo.TabIndex = 29;
             // 
             // txtMarca
             // 
             this.txtMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMarca.Location = new System.Drawing.Point(1047, 68);
+            this.txtMarca.Location = new System.Drawing.Point(1178, 85);
+            this.txtMarca.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(202, 30);
+            this.txtMarca.Size = new System.Drawing.Size(227, 35);
             this.txtMarca.TabIndex = 28;
             // 
             // dtpCreacion
             // 
             this.dtpCreacion.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpCreacion.Location = new System.Drawing.Point(467, 73);
+            this.dtpCreacion.Location = new System.Drawing.Point(525, 91);
+            this.dtpCreacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpCreacion.Name = "dtpCreacion";
-            this.dtpCreacion.Size = new System.Drawing.Size(452, 30);
+            this.dtpCreacion.Size = new System.Drawing.Size(508, 35);
             this.dtpCreacion.TabIndex = 26;
             // 
             // txtCombustible
             // 
             this.txtCombustible.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCombustible.Location = new System.Drawing.Point(144, 73);
+            this.txtCombustible.Location = new System.Drawing.Point(162, 91);
+            this.txtCombustible.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCombustible.Name = "txtCombustible";
-            this.txtCombustible.Size = new System.Drawing.Size(176, 30);
+            this.txtCombustible.Size = new System.Drawing.Size(198, 35);
             this.txtCombustible.TabIndex = 25;
             // 
             // txtMotor
             // 
             this.txtMotor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMotor.Location = new System.Drawing.Point(1160, 21);
+            this.txtMotor.Location = new System.Drawing.Point(1305, 26);
+            this.txtMotor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMotor.Name = "txtMotor";
-            this.txtMotor.Size = new System.Drawing.Size(232, 30);
+            this.txtMotor.Size = new System.Drawing.Size(260, 35);
             this.txtMotor.TabIndex = 24;
             // 
             // txtTipo_Vehiculo
             // 
             this.txtTipo_Vehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipo_Vehiculo.Location = new System.Drawing.Point(816, 23);
+            this.txtTipo_Vehiculo.Location = new System.Drawing.Point(918, 29);
+            this.txtTipo_Vehiculo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTipo_Vehiculo.Name = "txtTipo_Vehiculo";
-            this.txtTipo_Vehiculo.Size = new System.Drawing.Size(225, 30);
+            this.txtTipo_Vehiculo.Size = new System.Drawing.Size(253, 35);
             this.txtTipo_Vehiculo.TabIndex = 23;
             // 
             // txtClase
             // 
             this.txtClase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClase.Location = new System.Drawing.Point(370, 23);
+            this.txtClase.Location = new System.Drawing.Point(416, 29);
+            this.txtClase.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtClase.Name = "txtClase";
-            this.txtClase.Size = new System.Drawing.Size(226, 30);
+            this.txtClase.Size = new System.Drawing.Size(254, 35);
             this.txtClase.TabIndex = 21;
             // 
             // txtPlaca
             // 
             this.txtPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPlaca.Location = new System.Drawing.Point(98, 26);
+            this.txtPlaca.Location = new System.Drawing.Point(110, 32);
+            this.txtPlaca.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(150, 30);
+            this.txtPlaca.Size = new System.Drawing.Size(168, 35);
             this.txtPlaca.TabIndex = 20;
+            this.txtPlaca.TextChanged += new System.EventHandler(this.txtPlaca_TextChanged);
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(1592, 204);
+            this.btnAtras.Location = new System.Drawing.Point(1791, 255);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(180, 41);
+            this.btnAtras.Size = new System.Drawing.Size(202, 51);
             this.btnAtras.TabIndex = 19;
             this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -278,9 +285,10 @@ namespace FORMULARIOVEHICULOS
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(1361, 204);
+            this.btnEliminar.Location = new System.Drawing.Point(1531, 255);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(180, 41);
+            this.btnEliminar.Size = new System.Drawing.Size(202, 51);
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -288,9 +296,10 @@ namespace FORMULARIOVEHICULOS
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(1592, 126);
+            this.btnEditar.Location = new System.Drawing.Point(1791, 158);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(180, 41);
+            this.btnEditar.Size = new System.Drawing.Size(202, 51);
             this.btnEditar.TabIndex = 17;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -298,9 +307,10 @@ namespace FORMULARIOVEHICULOS
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(1361, 126);
+            this.btnAgregar.Location = new System.Drawing.Point(1531, 158);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(180, 41);
+            this.btnAgregar.Size = new System.Drawing.Size(202, 51);
             this.btnAgregar.TabIndex = 16;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -309,126 +319,117 @@ namespace FORMULARIOVEHICULOS
             // lblAudio
             // 
             this.lblAudio.AutoSize = true;
-            this.lblAudio.Location = new System.Drawing.Point(462, 126);
+            this.lblAudio.Location = new System.Drawing.Point(520, 158);
             this.lblAudio.Name = "lblAudio";
-            this.lblAudio.Size = new System.Drawing.Size(68, 25);
+            this.lblAudio.Size = new System.Drawing.Size(80, 29);
             this.lblAudio.TabIndex = 15;
             this.lblAudio.Text = "Audio";
-            // 
-            // lblImagen
-            // 
-            this.lblImagen.AutoSize = true;
-            this.lblImagen.Location = new System.Drawing.Point(896, 174);
-            this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(130, 25);
-            this.lblImagen.TabIndex = 14;
-            this.lblImagen.Text = "Imagen URL";
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(531, 219);
+            this.lblPrecio.Location = new System.Drawing.Point(1041, 221);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(73, 25);
+            this.lblPrecio.Size = new System.Drawing.Size(89, 29);
             this.lblPrecio.TabIndex = 13;
             this.lblPrecio.Text = "Precio";
             // 
             // lblPasajeros
             // 
             this.lblPasajeros.AutoSize = true;
-            this.lblPasajeros.Location = new System.Drawing.Point(1433, 21);
+            this.lblPasajeros.Location = new System.Drawing.Point(1612, 26);
             this.lblPasajeros.Name = "lblPasajeros";
-            this.lblPasajeros.Size = new System.Drawing.Size(108, 25);
+            this.lblPasajeros.Size = new System.Drawing.Size(130, 29);
             this.lblPasajeros.TabIndex = 12;
             this.lblPasajeros.Text = "Pasajeros";
             // 
             // lblVideo
             // 
             this.lblVideo.AutoSize = true;
-            this.lblVideo.Location = new System.Drawing.Point(531, 177);
+            this.lblVideo.Location = new System.Drawing.Point(597, 221);
             this.lblVideo.Name = "lblVideo";
-            this.lblVideo.Size = new System.Drawing.Size(68, 25);
+            this.lblVideo.Size = new System.Drawing.Size(81, 29);
             this.lblVideo.TabIndex = 11;
             this.lblVideo.Text = "Video";
             // 
             // lblEquipamiento
             // 
             this.lblEquipamiento.AutoSize = true;
-            this.lblEquipamiento.Location = new System.Drawing.Point(6, 177);
+            this.lblEquipamiento.Location = new System.Drawing.Point(7, 221);
             this.lblEquipamiento.Name = "lblEquipamiento";
-            this.lblEquipamiento.Size = new System.Drawing.Size(143, 25);
+            this.lblEquipamiento.Size = new System.Drawing.Size(174, 29);
             this.lblEquipamiento.TabIndex = 10;
             this.lblEquipamiento.Text = "Equipamiento";
             // 
             // lblModelo
             // 
             this.lblModelo.AutoSize = true;
-            this.lblModelo.Location = new System.Drawing.Point(1309, 68);
+            this.lblModelo.Location = new System.Drawing.Point(1473, 85);
             this.lblModelo.Name = "lblModelo";
-            this.lblModelo.Size = new System.Drawing.Size(83, 25);
+            this.lblModelo.Size = new System.Drawing.Size(101, 29);
             this.lblModelo.TabIndex = 9;
             this.lblModelo.Text = "Modelo";
             // 
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(969, 73);
+            this.lblMarca.Location = new System.Drawing.Point(1090, 91);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(72, 25);
+            this.lblMarca.Size = new System.Drawing.Size(84, 29);
             this.lblMarca.TabIndex = 8;
             this.lblMarca.Text = "Marca";
             // 
             // lblCreacion
             // 
             this.lblCreacion.AutoSize = true;
-            this.lblCreacion.Location = new System.Drawing.Point(351, 73);
+            this.lblCreacion.Location = new System.Drawing.Point(395, 91);
             this.lblCreacion.Name = "lblCreacion";
-            this.lblCreacion.Size = new System.Drawing.Size(99, 25);
+            this.lblCreacion.Size = new System.Drawing.Size(118, 29);
             this.lblCreacion.TabIndex = 6;
             this.lblCreacion.Text = "Creacion";
             // 
             // lblCombustible
             // 
             this.lblCombustible.AutoSize = true;
-            this.lblCombustible.Location = new System.Drawing.Point(1, 73);
+            this.lblCombustible.Location = new System.Drawing.Point(1, 91);
             this.lblCombustible.Name = "lblCombustible";
-            this.lblCombustible.Size = new System.Drawing.Size(132, 25);
+            this.lblCombustible.Size = new System.Drawing.Size(160, 29);
             this.lblCombustible.TabIndex = 5;
             this.lblCombustible.Text = "Combustible";
             // 
             // lblMotor
             // 
             this.lblMotor.AutoSize = true;
-            this.lblMotor.Location = new System.Drawing.Point(1087, 23);
+            this.lblMotor.Location = new System.Drawing.Point(1223, 29);
             this.lblMotor.Name = "lblMotor";
-            this.lblMotor.Size = new System.Drawing.Size(67, 25);
+            this.lblMotor.Size = new System.Drawing.Size(80, 29);
             this.lblMotor.TabIndex = 4;
             this.lblMotor.Text = "Motor";
             // 
             // lblTipo_Vehiculo
             // 
             this.lblTipo_Vehiculo.AutoSize = true;
-            this.lblTipo_Vehiculo.Location = new System.Drawing.Point(665, 26);
+            this.lblTipo_Vehiculo.Location = new System.Drawing.Point(748, 32);
             this.lblTipo_Vehiculo.Name = "lblTipo_Vehiculo";
-            this.lblTipo_Vehiculo.Size = new System.Drawing.Size(145, 25);
+            this.lblTipo_Vehiculo.Size = new System.Drawing.Size(175, 29);
             this.lblTipo_Vehiculo.TabIndex = 3;
             this.lblTipo_Vehiculo.Text = "Tipo Vehiculo";
             // 
             // lblClase
             // 
             this.lblClase.AutoSize = true;
-            this.lblClase.Location = new System.Drawing.Point(296, 26);
+            this.lblClase.Location = new System.Drawing.Point(333, 32);
             this.lblClase.Name = "lblClase";
-            this.lblClase.Size = new System.Drawing.Size(68, 25);
+            this.lblClase.Size = new System.Drawing.Size(80, 29);
             this.lblClase.TabIndex = 1;
             this.lblClase.Text = "Clase";
             // 
             // lblPlaca
             // 
             this.lblPlaca.AutoSize = true;
-            this.lblPlaca.Location = new System.Drawing.Point(6, 26);
+            this.lblPlaca.Location = new System.Drawing.Point(7, 32);
             this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(66, 25);
+            this.lblPlaca.Size = new System.Drawing.Size(78, 29);
             this.lblPlaca.TabIndex = 0;
             this.lblPlaca.Text = "Placa";
             // 
@@ -436,9 +437,11 @@ namespace FORMULARIOVEHICULOS
             // 
             this.grbEmpleados.Controls.Add(this.dgvVehiculos);
             this.grbEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbEmpleados.Location = new System.Drawing.Point(5, 278);
+            this.grbEmpleados.Location = new System.Drawing.Point(6, 348);
+            this.grbEmpleados.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grbEmpleados.Name = "grbEmpleados";
-            this.grbEmpleados.Size = new System.Drawing.Size(1851, 392);
+            this.grbEmpleados.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbEmpleados.Size = new System.Drawing.Size(2082, 490);
             this.grbEmpleados.TabIndex = 2;
             this.grbEmpleados.TabStop = false;
             this.grbEmpleados.Text = "Vehiculos";
@@ -449,23 +452,25 @@ namespace FORMULARIOVEHICULOS
             this.dgvVehiculos.AllowUserToDeleteRows = false;
             this.dgvVehiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVehiculos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvVehiculos.Location = new System.Drawing.Point(3, 26);
+            this.dgvVehiculos.Location = new System.Drawing.Point(3, 32);
+            this.dgvVehiculos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvVehiculos.Name = "dgvVehiculos";
             this.dgvVehiculos.ReadOnly = true;
             this.dgvVehiculos.RowHeadersWidth = 51;
             this.dgvVehiculos.RowTemplate.Height = 24;
-            this.dgvVehiculos.Size = new System.Drawing.Size(1845, 363);
+            this.dgvVehiculos.Size = new System.Drawing.Size(2076, 454);
             this.dgvVehiculos.TabIndex = 0;
             this.dgvVehiculos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVehiculos_CellClick);
             // 
             // frmAgregar_EditarVehiculos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1817, 702);
+            this.ClientSize = new System.Drawing.Size(2044, 878);
             this.ControlBox = false;
             this.Controls.Add(this.grbEmpleados);
             this.Controls.Add(this.grbInformacion);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmAgregar_EditarVehiculos";
             this.Text = "Agregar EditarVehiculos";
             this.grbInformacion.ResumeLayout(false);
@@ -484,7 +489,6 @@ namespace FORMULARIOVEHICULOS
         private System.Windows.Forms.TextBox txtTransmision;
         private System.Windows.Forms.Label lblTransmision;
         private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.TextBox txtImagen_URL;
         private System.Windows.Forms.TextBox txtVideo;
         private System.Windows.Forms.TextBox txtPasajeros;
         private System.Windows.Forms.TextBox txtAudio;
@@ -502,7 +506,6 @@ namespace FORMULARIOVEHICULOS
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label lblAudio;
-        private System.Windows.Forms.Label lblImagen;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblPasajeros;
         private System.Windows.Forms.Label lblVideo;

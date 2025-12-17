@@ -41,9 +41,9 @@ namespace FORMULARIOVEHICULOS
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(30, 29);
+            this.lblUsuario.Location = new System.Drawing.Point(34, 36);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(86, 25);
+            this.lblUsuario.Size = new System.Drawing.Size(103, 29);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -51,35 +51,38 @@ namespace FORMULARIOVEHICULOS
             // 
             this.lblClave.AutoSize = true;
             this.lblClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClave.Location = new System.Drawing.Point(30, 101);
+            this.lblClave.Location = new System.Drawing.Point(34, 126);
             this.lblClave.Name = "lblClave";
-            this.lblClave.Size = new System.Drawing.Size(68, 25);
+            this.lblClave.Size = new System.Drawing.Size(79, 29);
             this.lblClave.TabIndex = 1;
             this.lblClave.Text = "Clave";
             // 
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(134, 26);
+            this.txtUsuario.Location = new System.Drawing.Point(151, 32);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(181, 30);
+            this.txtUsuario.Size = new System.Drawing.Size(203, 35);
             this.txtUsuario.TabIndex = 2;
             // 
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(134, 96);
+            this.txtPass.Location = new System.Drawing.Point(151, 120);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(181, 30);
+            this.txtPass.Size = new System.Drawing.Size(203, 35);
             this.txtPass.TabIndex = 3;
             // 
             // btnAceptar
             // 
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(428, 31);
+            this.btnAceptar.Location = new System.Drawing.Point(482, 39);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(162, 38);
+            this.btnAceptar.Size = new System.Drawing.Size(182, 48);
             this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -88,9 +91,10 @@ namespace FORMULARIOVEHICULOS
             // btnAtras
             // 
             this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.Location = new System.Drawing.Point(428, 111);
+            this.btnAtras.Location = new System.Drawing.Point(482, 139);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(162, 38);
+            this.btnAtras.Size = new System.Drawing.Size(182, 48);
             this.btnAtras.TabIndex = 5;
             this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -98,9 +102,9 @@ namespace FORMULARIOVEHICULOS
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 206);
+            this.ClientSize = new System.Drawing.Size(763, 280);
             this.ControlBox = false;
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnAceptar);
@@ -108,8 +112,10 @@ namespace FORMULARIOVEHICULOS
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblClave);
             this.Controls.Add(this.lblUsuario);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -53,6 +53,7 @@ namespace FORMULARIOVEHICULOS
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eMPLEADOSToolStripMenuItem,
@@ -62,7 +63,8 @@ namespace FORMULARIOVEHICULOS
             this.aCERCADEToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1090, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1240, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -75,20 +77,21 @@ namespace FORMULARIOVEHICULOS
             this.recepcionistaToolStripMenuItem,
             this.agenteToolStripMenuItem});
             this.eMPLEADOSToolStripMenuItem.Name = "eMPLEADOSToolStripMenuItem";
-            this.eMPLEADOSToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
+            this.eMPLEADOSToolStripMenuItem.Size = new System.Drawing.Size(129, 29);
             this.eMPLEADOSToolStripMenuItem.Text = "EMPLEADOS";
+            this.eMPLEADOSToolStripMenuItem.Click += new System.EventHandler(this.eMPLEADOSToolStripMenuItem_Click);
             // 
             // iniciarSesionToolStripMenuItem
             // 
             this.iniciarSesionToolStripMenuItem.Name = "iniciarSesionToolStripMenuItem";
-            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.iniciarSesionToolStripMenuItem.Text = "Iniciar Sesion";
             this.iniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesionToolStripMenuItem_Click);
             // 
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
@@ -98,20 +101,20 @@ namespace FORMULARIOVEHICULOS
             this.agregarEditarEmpleadoToolStripMenuItem,
             this.agregarEditarVehiculosToolStripMenuItem});
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
-            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.administradorToolStripMenuItem.Text = "Administrador";
             // 
             // agregarEditarEmpleadoToolStripMenuItem
             // 
             this.agregarEditarEmpleadoToolStripMenuItem.Name = "agregarEditarEmpleadoToolStripMenuItem";
-            this.agregarEditarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
+            this.agregarEditarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(325, 34);
             this.agregarEditarEmpleadoToolStripMenuItem.Text = "Agregar / Editar Empleado";
             this.agregarEditarEmpleadoToolStripMenuItem.Click += new System.EventHandler(this.agregarEditarEmpleadoToolStripMenuItem_Click);
             // 
             // agregarEditarVehiculosToolStripMenuItem
             // 
             this.agregarEditarVehiculosToolStripMenuItem.Name = "agregarEditarVehiculosToolStripMenuItem";
-            this.agregarEditarVehiculosToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
+            this.agregarEditarVehiculosToolStripMenuItem.Size = new System.Drawing.Size(325, 34);
             this.agregarEditarVehiculosToolStripMenuItem.Text = "Agregar / Editar Vehiculos";
             this.agregarEditarVehiculosToolStripMenuItem.Click += new System.EventHandler(this.agregarEditarVehiculosToolStripMenuItem_Click);
             // 
@@ -120,13 +123,13 @@ namespace FORMULARIOVEHICULOS
             this.recepcionistaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestionarCitasToolStripMenuItem});
             this.recepcionistaToolStripMenuItem.Name = "recepcionistaToolStripMenuItem";
-            this.recepcionistaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.recepcionistaToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.recepcionistaToolStripMenuItem.Text = "Recepcionista";
             // 
             // gestionarCitasToolStripMenuItem
             // 
             this.gestionarCitasToolStripMenuItem.Name = "gestionarCitasToolStripMenuItem";
-            this.gestionarCitasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.gestionarCitasToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
             this.gestionarCitasToolStripMenuItem.Text = "Gestionar Citas";
             this.gestionarCitasToolStripMenuItem.Click += new System.EventHandler(this.gestionarCitasToolStripMenuItem_Click);
             // 
@@ -135,27 +138,27 @@ namespace FORMULARIOVEHICULOS
             this.agenteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroCitasToolStripMenuItem});
             this.agenteToolStripMenuItem.Name = "agenteToolStripMenuItem";
-            this.agenteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.agenteToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.agenteToolStripMenuItem.Text = "Agente";
             // 
             // registroCitasToolStripMenuItem
             // 
             this.registroCitasToolStripMenuItem.Name = "registroCitasToolStripMenuItem";
-            this.registroCitasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.registroCitasToolStripMenuItem.Size = new System.Drawing.Size(222, 34);
             this.registroCitasToolStripMenuItem.Text = "Registro Citas";
             this.registroCitasToolStripMenuItem.Click += new System.EventHandler(this.registroCitasToolStripMenuItem_Click);
             // 
             // SALIRToolStripMenuItem
             // 
             this.SALIRToolStripMenuItem.Name = "SALIRToolStripMenuItem";
-            this.SALIRToolStripMenuItem.Size = new System.Drawing.Size(61, 26);
+            this.SALIRToolStripMenuItem.Size = new System.Drawing.Size(74, 29);
             this.SALIRToolStripMenuItem.Text = "SALIR";
             this.SALIRToolStripMenuItem.Click += new System.EventHandler(this.SALIRToolStripMenuItem_Click);
             // 
             // cONTACTOToolStripMenuItem
             // 
             this.cONTACTOToolStripMenuItem.Name = "cONTACTOToolStripMenuItem";
-            this.cONTACTOToolStripMenuItem.Size = new System.Drawing.Size(98, 26);
+            this.cONTACTOToolStripMenuItem.Size = new System.Drawing.Size(119, 29);
             this.cONTACTOToolStripMenuItem.Text = "CONTACTO";
             this.cONTACTOToolStripMenuItem.Click += new System.EventHandler(this.cONTACTOToolStripMenuItem_Click);
             // 
@@ -165,27 +168,27 @@ namespace FORMULARIOVEHICULOS
             this.clientesToolStripMenuItem,
             this.empleadosToolStripMenuItem1});
             this.mANUALDEUSUARIOToolStripMenuItem.Name = "mANUALDEUSUARIOToolStripMenuItem";
-            this.mANUALDEUSUARIOToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.mANUALDEUSUARIOToolStripMenuItem.Size = new System.Drawing.Size(209, 29);
             this.mANUALDEUSUARIOToolStripMenuItem.Text = "MANUAL DE USUARIO";
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(202, 34);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem1
             // 
             this.empleadosToolStripMenuItem1.Name = "empleadosToolStripMenuItem1";
-            this.empleadosToolStripMenuItem1.Size = new System.Drawing.Size(166, 26);
+            this.empleadosToolStripMenuItem1.Size = new System.Drawing.Size(202, 34);
             this.empleadosToolStripMenuItem1.Text = "Empleados";
             this.empleadosToolStripMenuItem1.Click += new System.EventHandler(this.empleadosToolStripMenuItem1_Click);
             // 
             // aCERCADEToolStripMenuItem
             // 
             this.aCERCADEToolStripMenuItem.Name = "aCERCADEToolStripMenuItem";
-            this.aCERCADEToolStripMenuItem.Size = new System.Drawing.Size(110, 26);
+            this.aCERCADEToolStripMenuItem.Size = new System.Drawing.Size(133, 29);
             this.aCERCADEToolStripMenuItem.Text = "ACERCA DE...";
             // 
             // dgvVehiculos
@@ -195,25 +198,27 @@ namespace FORMULARIOVEHICULOS
             this.dgvVehiculos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvVehiculos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvVehiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVehiculos.Location = new System.Drawing.Point(0, 33);
+            this.dgvVehiculos.Location = new System.Drawing.Point(0, 41);
+            this.dgvVehiculos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvVehiculos.Name = "dgvVehiculos";
             this.dgvVehiculos.ReadOnly = true;
             this.dgvVehiculos.RowHeadersWidth = 51;
             this.dgvVehiculos.RowTemplate.Height = 24;
-            this.dgvVehiculos.Size = new System.Drawing.Size(1090, 440);
+            this.dgvVehiculos.Size = new System.Drawing.Size(1226, 550);
             this.dgvVehiculos.TabIndex = 2;
             this.dgvVehiculos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVehiculos_CellClick);
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 513);
+            this.ClientSize = new System.Drawing.Size(1240, 604);
             this.ControlBox = false;
             this.Controls.Add(this.dgvVehiculos);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmPrincipal";
             this.Text = "Venta Vehiculos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
