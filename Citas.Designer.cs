@@ -29,6 +29,7 @@ namespace FORMULARIOVEHICULOS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCitas));
             this.grbContacto = new System.Windows.Forms.GroupBox();
             this.btnAtras = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
@@ -87,23 +88,29 @@ namespace FORMULARIOVEHICULOS
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(322, 505);
+            this.btnAtras.Image = ((System.Drawing.Image)(resources.GetObject("btnAtras.Image")));
+            this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAtras.Location = new System.Drawing.Point(191, 505);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(237, 64);
+            this.btnAtras.Size = new System.Drawing.Size(113, 77);
             this.btnAtras.TabIndex = 19;
             this.btnAtras.Text = "Atras";
+            this.btnAtras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // btnAceptar
             // 
+            this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
+            this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAceptar.Location = new System.Drawing.Point(15, 505);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(237, 64);
+            this.btnAceptar.Size = new System.Drawing.Size(125, 77);
             this.btnAceptar.TabIndex = 18;
             this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
