@@ -29,6 +29,7 @@ namespace FORMULARIOVEHICULOS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgregar_EditarVehiculos));
             this.grbInformacion = new System.Windows.Forms.GroupBox();
             this.txtSeguridad = new System.Windows.Forms.TextBox();
             this.lblSeguridad = new System.Windows.Forms.Label();
@@ -112,7 +113,7 @@ namespace FORMULARIOVEHICULOS
             this.grbInformacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grbInformacion.Name = "grbInformacion";
             this.grbInformacion.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grbInformacion.Size = new System.Drawing.Size(2082, 325);
+            this.grbInformacion.Size = new System.Drawing.Size(2082, 335);
             this.grbInformacion.TabIndex = 1;
             this.grbInformacion.TabStop = false;
             this.grbInformacion.Text = "Datos Vehiculo";
@@ -274,45 +275,57 @@ namespace FORMULARIOVEHICULOS
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(1791, 255);
+            this.btnAtras.Image = ((System.Drawing.Image)(resources.GetObject("btnAtras.Image")));
+            this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAtras.Location = new System.Drawing.Point(1839, 251);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(202, 51);
+            this.btnAtras.Size = new System.Drawing.Size(98, 77);
             this.btnAtras.TabIndex = 19;
             this.btnAtras.Text = "Atras";
+            this.btnAtras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnEliminar.Location = new System.Drawing.Point(1531, 255);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(202, 51);
+            this.btnEliminar.Size = new System.Drawing.Size(120, 70);
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(1791, 158);
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnEditar.Location = new System.Drawing.Point(1839, 154);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(202, 51);
+            this.btnEditar.Size = new System.Drawing.Size(98, 89);
             this.btnEditar.TabIndex = 17;
             this.btnEditar.Text = "Editar";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
+            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAgregar.Location = new System.Drawing.Point(1531, 158);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(202, 51);
+            this.btnAgregar.Size = new System.Drawing.Size(128, 89);
             this.btnAgregar.TabIndex = 16;
             this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
